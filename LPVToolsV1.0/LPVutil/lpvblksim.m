@@ -97,8 +97,8 @@ switch Message
             % PSS Case
             CD = ndLinInterp(CDMat,niv,LIVData,IVData,dIVData,pValue);
         end
-        
         a1 = CD*[xt;Uinput];
+          
 end
 
 

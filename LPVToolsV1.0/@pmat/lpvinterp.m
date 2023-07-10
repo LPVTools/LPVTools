@@ -182,7 +182,7 @@ else
                     holder = zeros([tnpts szout(3:niv+2)]);
                     for i=1:tnpts
                         tmp = interpn(IVD{:},reshape(DataAtAD(i,:),origivl),VARCELL{:},imeth);
-                        holder(i,:) = tmp;
+                        holder(i,:,:) = tmp; %%%%%%%%%%%%%
                     end
                     pout(id{:},k) = holder;
                 end

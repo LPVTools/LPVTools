@@ -1,9 +1,10 @@
 ### Hi there 👋
 
-For the moment this is a mirror image of: https://seiler.engin.umich.edu/software/
+Rework of the LPVTools to provide functionality with MATLAB version 2020b and higher.
 
 LPVTools
 Summary: LPVTools is a MATLAB toolbox for modeling and design in the Linear Parameter-Varying framework (LPV). LPVTools contains data structures and tools that allow users to model parameter dependent systems in MATLAB and Simulink. In addition, the toolbox contains a collection of functions for model reduction, analysis, synthesis and simulation in the LPV framework.
+Original toolbox can be found here: https://seiler.engin.umich.edu/software/
 
 Developers: G. Balas, A. Hjartarson, A. Packard, and P. Seiler.
 

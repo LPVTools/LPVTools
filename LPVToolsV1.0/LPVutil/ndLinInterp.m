@@ -40,7 +40,13 @@ for k=1:nIV
    
        
 end
-R = reshape(reshape(M(:,:,idxcell{:}),[szM(1)*szM(2) nVertices])*factor,[szM(1) szM(2)]);
+
+%R = reshape(reshape(M(:,:,idxcell{:}),[szM(1)*szM(2) nVertices])*factor,[szM(1) szM(2)]);
+
+idxcell_sel = [idxcell{1}, idxcell{2}];
+M_prime = reshape(M(:,:,idxcell_sel),[szM(1)*szM(2) nVertices]);
+M_prime = M_prime*factor;
+R = reshape(M_prime,[szM(1) szM(2)]);
 
 
 function [i,alpha] = LOCALfindslotalpha(N,vec,val,dvec)
